@@ -1,195 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>FutureStackAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #05070D;
-    color: white;
-}
+    <meta
+        name="description"
+        content="FutureStack AI is building the infrastructure of what comes next — connecting AI, blockchain, commerce, education, and emerging technologies."
+    >
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
+    <meta
+        name="keywords"
+        content="FutureStack AI, AI, Blockchain, Technology Infrastructure, Digital Commerce, Education, Developers"
+    >
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
+    <meta name="author" content="FutureStack AI">
 
-.hero p {
-    color: #b0b0b0;
-    max-width: 700px;
-    margin: auto;
-    font-size: 16px;
-}
+    <title>FutureStack AI — Building the Infrastructure of What Comes Next</title>
 
-.btn {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: #6C5CE7;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-}
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* SECTION */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-.section h2 {
-    margin-bottom: 30px;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #0E111A;
-    padding: 20px;
-    width: 300px;
-    border-radius: 12px;
-    border: 1px solid #1f2230;
-}
-
-.card h3 {
-    color: #00D4FF;
-}
-
-.card p {
-    color: #b5b5b5;
-    font-size: 14px;
-}
-
-.card button {
-    margin-top: 15px;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    background: #00D4FF;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #1f2230;
-    color: #777;
-    margin-top: 40px;
-}
-</style>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Building the Infrastructure of Future Digital Systems</h1>
-    <p>
-        FutureStackAI is an ecosystem building modular infrastructure for AI, Blockchain,
-        Commerce, and Digital Economy systems across emerging markets.
-    </p>
-    <button class="btn">Explore Ecosystem</button>
-</div>
+    <!-- =========================================================
+         SITE HEADER
+    ========================================================== -->
 
-<!-- ECOSYSTEM -->
-<div class="section">
-    <h2>Our Ecosystem</h2>
+    <header class="site-header">
 
-    <div class="cards">
+        <div class="container header-container">
 
-        <div class="card">
-            <h3>Reallyusuf1 Infrastructure</h3>
-            <p>
-                Blockchain-powered commerce infrastructure enabling secure digital trade,
-                payments, and business systems across global markets.
-            </p>
-            <button>Coming Soon</button>
-        </div>
+            <!-- Logo -->
+            <a href="#home" class="brand-logo" aria-label="FutureStack AI Home">
 
-        <div class="card">
-            <h3>Freumia Labs</h3>
-            <p>
-                AI and education infrastructure lab building intelligent systems for learning,
-                productivity, and digital intelligence in Africa.
-            </p>
-            <a href="https://www.freumia.com/"
-   target="_blank"
-   style="display:block; margin-top:15px; padding:10px; background:#00D4FF; color:#fff; text-decoration:none; border-radius:8px;">
-   Explore Freumia Student AI
+                <span class="brand-logo-mark" aria-hidden="true">
+                    F
+                </span>
+
+                <span class="brand-logo-text">
+                    FutureStack AI
+                </span>
+
             </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation" aria-label="Main navigation">
+
+                <ul class="navigation-list">
+
+                    <li class="navigation-item">
+                        <a href="#home" class="navigation-link active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#ecosystem" class="navigation-link">
+                            Ecosystem
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#what-we-build" class="navigation-link">
+                            What We Build
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#vision" class="navigation-link">
+                            Vision
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#about" class="navigation-link">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#developers" class="navigation-link">
+                            Developers
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#news" class="navigation-link">
+                            News
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Header CTA -->
+            <a href="#ecosystem" class="header-cta">
+                Explore Ecosystem
+                <span aria-hidden="true">→</span>
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+                type="button"
+                class="mobile-menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
 
-    </div>
-</div>
 
-<!-- VISION -->
-<div class="section">
-    <h2>Our Vision</h2>
-    <p style="max-width:700px;margin:auto;color:#b0b0b0;">
-        We are building a connected ecosystem of infrastructure companies that power the
-        next generation of digital economy systems — combining AI, blockchain, commerce,
-        and education into scalable real-world solutions.
-    </p>
-</div>
-<!-- FOUNDER -->
-<div class="section">
-    <h2>Founder</h2>
+        <!-- Mobile Navigation -->
+        <nav
+            id="mobile-navigation"
+            class="mobile-navigation"
+            aria-label="Mobile navigation"
+        >
 
-    <div class="card" style="max-width:700px;margin:auto;">
-        <h3>Yusuf Sani</h3>
+            <ul class="mobile-navigation-list">
 
-        <p>
-            Founder & Technology Builder
-        </p>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-        <p>
-            Building the future through Artificial Intelligence,
-            Blockchain Technology, Digital Infrastructure,
-            and Emerging Technologies.
-        </p>
+                <li>
+                    <a href="#ecosystem">Ecosystem</a>
+                </li>
 
-        <p style="margin-top:20px; line-height:2.5;">
-    <strong>X:</strong>
-    <a href="https://x.com/Reallyusuf1Offi" target="_blank">
-        @Reallyusuf1Offi
-    </a>
-    <br>
+                <li>
+                    <a href="#what-we-build">What We Build</a>
+                </li>
 
-    <strong>Telegram:</strong>
-    <a href="https://t.me/Reallyusuf1" target="_blank">
-        @Reallyusuf1
-    </a>
-    <br>
+                <li>
+                    <a href="#vision">Vision</a>
+                </li>
 
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/yusuf-sani-565753313" target="_blank">
-        Yusuf Sani
-    </a>
-        </p>
-    </div>
-</div>
-<!-- FOOTER -->
-<footer>
-    © 2026 FutureStackAI • Founded by Yusuf Sani
-</footer>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-</body>
-</html>
+                <li>
+                    <a href="#developers">Developers</a>
+                </li>
+
+                <li>
+                    <a href="#news">News</a>
+                </li>
+
+                <li>
+                    <a href="#ecosystem" class="mobile-navigation-cta">
+                        Explore Ecosystem
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+
+        <section
+            id="home"
+            class="hero-section"
+            aria-labelledby="hero-title"
+        >
+
+            <!-- Background Video -->
+            <div class="hero-background" aria-hidden="true">
+
+                <video
+                    class="hero-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/images/hero-poster.jpg"
+                >
+
+                    <source
+                        src="assets/videos/futurestack-hero.mp4"
+                        type="video/mp4"
+                    >
+
+                </video>
+
+                <div class="hero-overlay"></div>
+
+            </div>
+
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="section-eyebrow">
+                        Future Technology Infrastructure
+                    </span>
+
+                    <h1 id="hero-title" class="hero-title">
+
+                        Building the
+                        <span>Infrastructure</span>
+                        of
+                        <span>What Comes Next.</span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        FutureStack AI is building a connected ecosystem
+                        of technology companies and infrastructure designed
+                        to power the next generation of AI, blockchain,
+                        commerce, education, and digital systems.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#ecosystem"
+                            class="button button-primary"
+                        >
+                            Explore the Ecosystem
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a
+                            href="#vision"
+                            class="button button-secondary"
+                        >
+                            Our Vision
+                            <span aria-hidden="true">◉</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Technology Tags -->
+                    <div
+                        class="hero-technologies"
+                        aria-label="FutureStack AI technology areas"
+                    >
+
+                        <span>AI</span>
+                        <span>Blockchain</span>
+                        <span>Commerce</span>
+                        <span>Education</span>
+                        <span>Infrastructure</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             THE WORLD IS CHANGING
+        ====================================================== -->
+
+        <section
+            id="technology"
+            class="technology-section section"
+            aria-labelledby="technology-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        The World Is Changing
+                    </span>
+
+                    <h2 id="technology-title">
+                        The world is becoming intelligent.
+                    </h2>
+
+                </div>
+
+
+                <div class="technology-grid">
+
+                    <!-- AI -->
+                    <article class="technology-card">
+
+                        <div class="technology-icon" aria-hidden="true">
+                            AI
+                        </div>
+
+                        <h3>
+                            Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Machines are becoming intelligent and
+                            capable of extraordinary things.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Blockchain -->
+                    <article class="technology-card">
+
+                        <div class="technology-icon" aria-hidden="true">
+                            BC
+                        </div>
+
+                        <h3>
+                            Blockchain
+                        </h3>
+
+                        <p>
+                            Digital ownership and coordination
+                            are being reimagined.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Robotics -->
+                    <article class="technology-card">
+
+                        <div class="technology-icon" aria-hidden="true">
+                            RB
+                        </div>
+
+                        <h3>
+                            Robotics
+                        </h3>
+
+                        <p>
+                            Physical systems are becoming
+                            autonomous and adaptive.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Space -->
+                    <article class="technology-card">
+
+                        <div class="technology-icon" aria-hidden="true">
+                            SP
+                        </div>
+
+                        <h3>
+                            Space
+                        </h3>
+
+                        <p>
+                            Human infrastructure is expanding
+                            beyond our planet.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Digital Commerce -->
+                    <article class="technology-card">
+
+                        <div class="technology-icon" aria-hidden="true">
+                            DC
+                        </div>
+
+                        <h3>
+                            Digital Commerce
+                        </h3>
+
+                        <p>
+                            Global commerce is becoming
+                            increasingly programmable.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="technology-statement">
+
+                    <p>
+                        But every technological revolution needs infrastructure.
+                    </p>
+
+                    <strong>
+                        We build it.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHAT WE BUILD
+        ====================================================== -->
+
+        <section
+            id="what-we-build"
+            class="what-we-build-section section"
+            aria-labelledby="what-we-build-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        What We Build
+                    </span>
+
+                    <h2 id="what-we-build-title">
+                        We build systems, not isolated products.
+                    </h2>
+
+                    <p>
+                        Our ecosystem is designed around the infrastructure
+                        required to create the next generation of digital systems.
+                    </p>
+
+                </div>
+
+
+                <div class="build-grid">
+
+                    <!-- AI -->
+                    <article class="build-card">
+
+                        <span class="build-number">
+                            01
+                        </span>
+
+                        <div class="build-icon" aria-hidden="true">
+                            AI
+                        </div>
+
+                        <h3>
+                            Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Intelligent systems, AI infrastructure,
+                            automation, and tools that power the future.
+                        </p>
+
+                        <a href="#developers" class="card-link">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Blockchain -->
+                    <article class="build-card">
+
+                        <span class="build-number">
+                            02
+                        </span>
+
+                        <div class="build-icon" aria-hidden="true">
+                            BC
+                        </div>
+
+                        <h3>
+                            Blockchain Infrastructure
+                        </h3>
+
+                        <p>
+                            Decentralized infrastructure, digital ownership,
+                            payments, and programmable systems.
+                        </p>
+
+                        <a href="#ecosystem" class="card-link">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Commerce -->
+                    <article class="build-card">
+
+                        <span class="build-number">
+                            03
+                        </span>
+
+                        <div class="build-icon" aria-hidden="true">
+                            CM
+                        </div>
+
+                        <h3>
+                            Digital Commerce
+                        </h3>
+
+                        <p>
+                            Infrastructure connecting businesses,
+                            users, markets, and digital economies.
+                        </p>
+
+                        <a href="#ecosystem" class="card-link">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Education -->
+                    <article class="build-card">
+
+                        <span class="build-number">
+                            04
+                        </span>
+
+                        <div class="build-icon" aria-hidden="true">
+                            ED
+                        </div>
+
+                        <h3>
+                            Education Technology
+                        </h3>
+
+                        <p>
+                            Technology that expands access to quality
+                            and intelligent learning.
+                        </p>
+
+                        <a href="#ecosystem" class="card-link">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Emerging Systems -->
+                    <article class="build-card">
+
+                        <span class="build-number">
+                            05
+                        </span>
+
+                        <div class="build-icon" aria-hidden="true">
+                            ES
+                        </div>
+
+                        <h3>
+                            Emerging Systems
+                        </h3>
+
+                        <p>
+                            Infrastructure for technologies that have not
+                            fully arrived yet — we will be ahead.
+                        </p>
+
+                        <a href="#vision" class="card-link">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ECOSYSTEM
+        ====================================================== -->
+
+        <section
+            id="ecosystem"
+            class="ecosystem-section section"
+            aria-labelledby="ecosystem-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        Our Ecosystem
+                    </span>
+
+                    <h2 id="ecosystem-title">
+                        Companies building the future together.
+                    </h2>
+
+                    <p>
+                        FutureStack AI provides the foundation for a growing
+                        network of technology companies and future systems.
+                    </p>
+
+                </div>
+
+
+                <div class="ecosystem-grid">
+
+                    <!-- Freumia Labs -->
+                    <article class="ecosystem-card ecosystem-card-featured">
+
+                        <div class="ecosystem-card-content">
+
+                            <span class="ecosystem-number">
+                                01
+                            </span>
+
+                            <div class="ecosystem-icon" aria-hidden="true">
+                                F
+                            </div>
+
+                            <h3>
+                                Freumia Labs
+                            </h3>
+
+                            <p>
+                                AI and education infrastructure lab building
+                                intelligent systems for learning, productivity,
+                                and digital intelligence.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="card-link"
+                            >
+                                Explore Freumia Student AI
+                                <span aria-hidden="true">→</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Reallyusuf1 Infrastructure -->
+                    <article class="ecosystem-card ecosystem-card-featured">
+
+                        <div class="ecosystem-card-content">
+
+                            <span class="ecosystem-number">
+                                02
+                            </span>
+
+                            <div class="ecosystem-icon" aria-hidden="true">
+                                R
+                            </div>
+
+                            <h3>
+                                Reallyusuf1 Infrastructure
+                            </h3>
+
+                            <p>
+                                Blockchain-powered commerce infrastructure
+          
