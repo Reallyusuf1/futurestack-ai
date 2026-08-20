@@ -2112,4 +2112,192 @@ ul {
         transition-duration: 0.01ms !important;
     }
 }
+   /* =========================================================
+   FUTURESTACK AI
+   MOBILE CARD GRID — FINAL
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =========================================
+       TECHNOLOGY
+       2 CARDS PER ROW
+       ========================================= */
+
+    .technology-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+    .technology-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        min-height: 220px !important;
+
+        padding: 28px 16px !important;
+
+        border-right: 1px solid var(--color-border) !important;
+        border-bottom: 1px solid var(--color-border) !important;
+        border-top: 0 !important;
+    }
+
+    .technology-card:nth-child(2n) {
+        border-right: 0 !important;
+    }
+
+
+    /* =========================================
+       WHAT WE BUILD
+       2 CARDS PER ROW
+       ========================================= */
+
+    .build-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .build-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        min-height: 290px !important;
+
+        padding: 22px 17px !important;
+    }
+
+    .build-card h3 {
+        font-size: 0.92rem !important;
+        line-height: 1.3 !important;
+        padding-right: 18px !important;
+    }
+
+    .build-card p {
+        font-size: 0.7rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .build-icon {
+        width: 44px !important;
+        height: 44px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .build-number {
+        top: 16px !important;
+        right: 14px !important;
+    }
+
+    .card-link {
+        margin-top: 16px !important;
+        font-size: 0.68rem !important;
+    }
+
+
+    /* =========================================
+       OUR ECOSYSTEM
+       2 CARDS PER ROW
+       ========================================= */
+
+    .ecosystem-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .ecosystem-card,
+    .ecosystem-card-future {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        min-height: 300px !important;
+
+        padding: 22px 17px !important;
+
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .ecosystem-card-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .ecosystem-card h3 {
+        font-size: 1.05rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .ecosystem-card p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 0.7rem !important;
+        line-height: 1.6 !important;
+
+        overflow-wrap: anywhere !important;
+    }
+
+    .ecosystem-icon {
+        width: 42px !important;
+        height: 42px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .ecosystem-number {
+        margin-bottom: 12px !important;
+    }
+
+
+    /* =========================================
+       DEVELOPERS
+       2 CARDS PER ROW
+       ========================================= */
+
+    .developer-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        gap: 1px !important;
+    }
+
+    .developer-card {
+        min-width: 0 !important;
+        min-height: 250px !important;
+        padding: 22px 17px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   1 CARD PER ROW
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .technology-grid,
+    .build-grid,
+    .ecosystem-grid,
+    .developer-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .technology-card {
+        min-height: 0 !important;
+    }
+
+    .build-card {
+        min-height: 0 !important;
+    }
+
+    .ecosystem-card,
+    .ecosystem-card-future {
+        min-height: 0 !important;
+    }
+}
   
