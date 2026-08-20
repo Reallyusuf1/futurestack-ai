@@ -1280,7 +1280,8 @@ ul {
         1px solid var(--color-border);
 
     background:
-        var(--color-border);
+        var(-color-border);
+}
   /* =========================================================
    FUTURESTACK AI
    13. RESPONSIVE MOBILE SYSTEM
