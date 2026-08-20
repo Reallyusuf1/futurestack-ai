@@ -1,85 +1,128 @@
 /**
- * FutureStack AI
- * Main navigation interactions
+ * =========================================================
+ * FUTURESTACK AI
+ * Main JavaScript
+ * =========================================================
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    /* ---------------------------------------------------------
+       MOBILE NAVIGATION
+    --------------------------------------------------------- */
+
     const menuButton = document.querySelector(".mobile-menu-button");
     const mobileNavigation = document.querySelector("#mobile-navigation");
+    const mobileLinks = document.querySelectorAll(
+        "#mobile-navigation a"
+    );
 
     if (!menuButton || !mobileNavigation) {
         return;
     }
 
-    const mobileLinks = mobileNavigation.querySelectorAll("a");
+    const openMenu = () => {
+        mobileNavigation.classList.add("is-open");
+        mobileNavigation.setAttribute("aria-hidden", "false");
 
-    const setMenuState = (isOpen) => {
-        menuButton.setAttribute(
-            "aria-expanded",
-            String(isOpen)
-        );
+        menuButton.classList.add("active");
+        menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close navigation menu");
 
-        menuButton.setAttribute(
-            "aria-label",
-            isOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-        );
-
-        mobileNavigation.classList.toggle(
-            "active",
-            isOpen
-        );
-
-        mobileNavigation.setAttribute(
-            "aria-hidden",
-            String(!isOpen)
-        );
+        document.body.classList.add("menu-open");
     };
 
-    // Start with the menu closed
-    setMenuState(false);
+    const closeMenu = () => {
+        mobileNavigation.classList.remove("is-open");
+        mobileNavigation.setAttribute("aria-hidden", "true");
 
-    // Toggle menu
-    menuButton.addEventListener("click", () => {
+        menuButton.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+
+        document.body.classList.remove("menu-open");
+    };
+
+    const toggleMenu = () => {
         const isOpen =
-            menuButton.getAttribute("aria-expanded") === "true";
+            mobileNavigation.classList.contains("is-open");
 
-        setMenuState(!isOpen);
-    });
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    };
 
-    // Close menu when a navigation link is clicked
+    /* Hamburger button */
+    menuButton.addEventListener("click", toggleMenu);
+
+    /* Close menu when a navigation link is selected */
     mobileLinks.forEach((link) => {
         link.addEventListener("click", () => {
-            setMenuState(false);
+            closeMenu();
         });
     });
 
-    // Close menu with Escape key
+    /* Close menu with Escape */
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            setMenuState(false);
-        }
-    });
-
-    // Close menu when clicking outside it
-    document.addEventListener("click", (event) => {
-        const isOpen =
-            menuButton.getAttribute("aria-expanded") === "true";
-
         if (
-            isOpen &&
-            !mobileNavigation.contains(event.target) &&
-            !menuButton.contains(event.target)
+            event.key === "Escape" &&
+            mobileNavigation.classList.contains("is-open")
         ) {
-            setMenuState(false);
+            closeMenu();
+            menuButton.focus();
         }
     });
 
-    // Close mobile menu when returning to desktop
+    /* Keep menu closed when switching back to desktop */
     window.addEventListener("resize", () => {
         if (window.innerWidth > 850) {
-            setMenuState(false);
+            closeMenu();
         }
     });
+
+    /* Initial accessibility state */
+    mobileNavigation.setAttribute("aria-hidden", "true");
+
+
+    /* ---------------------------------------------------------
+       SMOOTH SCROLL
+    --------------------------------------------------------- */
+
+    const anchorLinks = document.querySelectorAll(
+        'a[href^="#"]'
+    );
+
+    anchorLinks.forEach((link) => {
+
+        link.addEventListener("click", (event) => {
+
+            const targetId = link.getAttribute("href");
+
+            if (
+                !targetId ||
+                targetId === "#" ||
+                targetId === "#!"
+            ) {
+                return;
+            }
+
+            const target = document.querySelector(targetId);
+
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        });
+
+    });
+
 });
